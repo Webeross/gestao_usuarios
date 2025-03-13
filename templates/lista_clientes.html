@@ -3,22 +3,14 @@
       <tr>
         <th scope="col">#</th>
         <th scope="col">Nome</th>
-        <th scope="col">E-mail</th>
+        <th scope="col">Email</th>
         <th scope="col">Ações</th>
       </tr>
     </thead>
-    <tbody>
+    <tbody id="lista-clientes">
 
         {% for cliente in clientes %}
-            <tr>
-                <th scope="row">{{ cliente.id }}</th>
-                <td>{{ cliente.nome }}</td>
-                <td>{{ cliente.email }}</td>
-                <td>
-                    <button class="btn btn-primary">Editar</button>
-                    <button class="btn btn-danger">Deletar</button>
-                </td>
-            </tr>
+            {% include 'item_cliente.html'%}
         {% endfor %}
       
     </tbody>
