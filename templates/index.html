@@ -14,7 +14,9 @@
     
     <div class="container">
       <!-- Formulário clientes-->
-      <div c-container=" {{ url_for('cliente.form_cliente') }}"></div>
+      <div id="form-cliente"
+          c-container=" {{ url_for('cliente.form_cliente') }}">
+      </div>
       <hr>
       <!-- Lista clientes-->
        <h2>Lista de Clientes</h2>
